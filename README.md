@@ -1,5 +1,7 @@
 # Feedback API
 
+## Домен `https://kitek.ktkv.dev/feedback`
+
 ## **Аутентификация**
 
 ### `POST /api/auth/register`
