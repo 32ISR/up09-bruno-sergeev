@@ -1,0 +1,22 @@
+info:
+  name: DELETE-messages
+  type: http
+  seq: 6
+
+http:
+  method: DELETE
+  url: https://kitek.ktkv.dev/feedback/api/messages/:id
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3NzUwODEwODI1MjYsInVzZXJuYW1lIjoiQWRtaW4iLCJpYXQiOjE3NzUwODExNzAsImV4cCI6MTc3NTE2NzU3MH0.V0Evg3RQ7L2KdelXKwcsinwZXa5m0jyN8IcmZno8boQ
+  params:
+    - name: id
+      value: "1775082243371"
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
