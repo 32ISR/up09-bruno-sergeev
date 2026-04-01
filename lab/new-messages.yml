@@ -1,0 +1,24 @@
+info:
+  name: new-messages
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: https://kitek.ktkv.dev/feedback/api/messages
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3NzUwODEwODI1MjYsInVzZXJuYW1lIjoiQWRtaW4iLCJpYXQiOjE3NzUwODExNzAsImV4cCI6MTc3NTE2NzU3MH0.V0Evg3RQ7L2KdelXKwcsinwZXa5m0jyN8IcmZno8boQ
+  body:
+    type: json
+    data: |-
+      {
+          "content": "<Сумерки империй> (Twilight Imperium) — это легендарная эпическая космическая стратегия от Fantasy Flight Games . Это культовый варгейм для 3-6 игроков (до 8 с дополнением), где партия длится от 6 часов . Вы возглавляете одну из 17 уникальных рас, сражаясь за контроль над галактикой через дипломатию, торговлю и войну. Цель — первым набрать 10 победных очков, выполняя задания . Игра славится своей глубиной и огромным количеством пластиковых миниатюр"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
